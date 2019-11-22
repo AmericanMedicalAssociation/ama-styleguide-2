@@ -21,9 +21,14 @@ article ul,
 }
 article {
     .text-body {
+        ul {
+            width: 100%;
+        }
         ul li {
             display: flex;
+            flex-wrap: wrap;
             margin: 0;
+            width: 100%;
 
             &:before {
                  display: inline-block;
