@@ -165,7 +165,7 @@ a.ama__membership {
       bottom: 0;
     }
     @include breakpoint($bp-med min-width) {
-      text-align: center;
+      padding-right: 28px;
       flex-grow: 3;
     }
     @include breakpoint($bp-large min-width) {
