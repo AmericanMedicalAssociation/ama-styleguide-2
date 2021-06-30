@@ -38,7 +38,7 @@
 
             // Submits the search form after a select menu items has been selected
             $('.ama__select-menu__select').on('selectmenuchange', function() {
-              $('#block-exposedformacquia-searchpage').submit();
+              $('#block-exposedformacquia-search-solrpage').submit();
             });
 
             $('.ama__select-menu__select').on('selectmenuchange', function() {

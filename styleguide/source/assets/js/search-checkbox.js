@@ -17,7 +17,7 @@
       }
 
       // Clear filter
-      function cleafFilterList(clearSearchFilter) {
+      function clearFilterList(clearSearchFilter) {
         clearSearchFilter.click(function (e) {
           e.preventDefault();
           $categorySearchInput.val('');
@@ -25,7 +25,7 @@
 
           $('.facets-widget-checkbox ul li [type=checkbox]').each( function() {
             $(this).prop("checked", false);
-            $('#block-exposedformacquia-searchpage').submit();
+            $('#block-exposedformacquia-search-solrpage').submit();
           });
         });
       }
@@ -34,7 +34,7 @@
       filterList($categorySearchInput, $categorySearchList);
 
       // Invoke clear filter
-      cleafFilterList($clearSearchFilter);
+      clearFilterList($clearSearchFilter);
     }
   };
 })(jQuery, Drupal);
